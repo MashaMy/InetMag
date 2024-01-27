@@ -4,7 +4,7 @@ function Clothers ({newClothers}) {
     return (
         <div className="products">
             {newClothers.map ((element => {
-                const {id, name, price,image } = element;
+                const {id, name, searchTerm, price,image } = element;
 
                 return (
 
@@ -13,6 +13,7 @@ function Clothers ({newClothers}) {
                         <div>
                         <h3>{name}</h3>
                         <h4>${price}</h4>
+                        <h4>{searchTerm}</h4> 
                         </div>
                     </div>
                 )
