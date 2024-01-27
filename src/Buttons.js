@@ -6,7 +6,7 @@ function Buttons ({ data, setClother}) {
           item.searchTerm.forEach(term => {
             if (term === searchTerm) {
               FilteredResult.push(item);
-              setClother(filteredClothers);
+              setClother(FilteredResult);
             }
           })
         })
