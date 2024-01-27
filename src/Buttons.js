@@ -13,7 +13,7 @@ function Buttons ({ data, setClother}) {
       }
           
     return (<div className="cont">
-        <button className="change" onClick={() => setClother ("data")}>Все</button>
+        <button className="change" onClick={() => setClother (data)}>Все</button>
         <button className="change" onClick={() => filteredClothers ("dress")}>Платья</button>
         <button className="change" onClick={() => filteredClothers ("pants")} >Штаны</button>
         <button className="change" onClick={() => filteredClothers ("skirt")}>Юбка</button>
